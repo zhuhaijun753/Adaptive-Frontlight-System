@@ -38,26 +38,6 @@ BU_:
 
 
 
-EV_ Display_LightOnOffCounter: 0 [0|0] "" 0 1 DUMMY_NODE_VECTOR0 Vector__XXX;
-
-EV_ Display_OdometerWriteReqPending: 0 [0|0] "" 0 2 DUMMY_NODE_VECTOR0 Vector__XXX;
-
-EV_ Display_Odometer: 0 [0|0] "" 0 3 DUMMY_NODE_VECTOR0 Vector__XXX;
-
-EV_ env_InteriorLightFrontDEFECT: 0 [0|0] "" 0 1 DUMMY_NODE_VECTOR0 Vector__XXX;
-
-EV_ env_InteriorLightFront: 0 [0|0] "" 0 2 DUMMY_NODE_VECTOR0 Vector__XXX;
-
-EV_ env_DoorFrontRight: 0 [0|2] "" 0 3 DUMMY_NODE_VECTOR0 Vector__XXX;
-
-EV_ env_DoorFrontLeft: 0 [0|2] "" 0 4 DUMMY_NODE_VECTOR0 Vector__XXX;
-
-EV_ env_RearInteriorLight: 0 [0|2] "" 0 5 DUMMY_NODE_VECTOR0 Vector__XXX;
-
-EV_ env_RearLeftDoor: 0 [0|2] "" 0 6 DUMMY_NODE_VECTOR0 Vector__XXX;
-
-EV_ env_RearRightDoor: 0 [0|2] "" 0 7 DUMMY_NODE_VECTOR0 Vector__XXX;
-
 BA_DEF_ SG_  "GenSigTimeoutTime_ECU_PingPong" INT 0 65535;
 BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 0;
 BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
@@ -124,7 +104,8 @@ BA_DEF_DEF_  "GenMsgILSupport" "yes";
 BA_DEF_DEF_  "DiagState" "No";
 BA_DEF_DEF_  "DiagResponse" "No";
 BA_DEF_DEF_  "DiagRequest" "No";
-BA_ "Manufacturer" "VOLVO_AB";
-BA_ "NmType" "NmAsr";
-BA_ "BusType" "CAN";
 BA_ "Baudrate" 100000;
+BA_ "BusType" "CAN";
+BA_ "NmType" "NmAsr";
+BA_ "Manufacturer" "VOLVO_AB";
+
