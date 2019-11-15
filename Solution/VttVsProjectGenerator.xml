@@ -1,0 +1,45 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>
+-->
+<VttVsProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.vector.com/vtt/projectgenerator">
+   <Settings
+     Compiler="VisualStudio2013"
+     RootDirectory="A:\_E1_SoftwareComponents\trunk\"
+     SutOutputDirectory="A:\_E1_SoftwareComponents\trunk\SUT" 
+     CompilerOutDirSuffix="_vc120" />
+   <Debug
+      KernelPath="C:\Program Files\Vector vVIRTUALtarget 1.0\Exec32\VttKernel.exe"
+      KernelConfigurationPath="A:\_E1_SoftwareComponents\trunk\SUT\MyECU.rtcfg" />
+   <Solution
+      SolutionName="MyECU"
+      SolutionGuid="1DAEE393-FB7F-46F3-BC89-0708AE1FB3D9"
+      SolutionDirectory="A:\_E1_SoftwareComponents\trunk\Solution" />
+   <Project
+      EcuInstance="MyECU"
+      ProjectGuid="1610C855-A325-4088-8ADC-0D3467867A3D"
+      ProjectDirectory="A:\_E1_SoftwareComponents\trunk\Solution\MyECU"
+      BswDirectory="A:\_E1_SoftwareComponents\BSW"
+      GenDataDirectory="A:\_E1_SoftwareComponents\trunk\Appl\GenDataVtt" 
+      SourceDirectory="A:\_E1_SoftwareComponents\trunk\Appl\Source"
+      AdditionalCompileOptions=""
+      AdditionalLinkOptions=""
+      PowerSupplyInitValue="1"
+      ExecutionMode="PREEMPTIVE_MULTITHREAD">
+      <EcucFile Path="A:\_E1_SoftwareComponents\trunk\Config\ECUC\MyECU.ecuc.arxml" />
+      <CompileElements>
+          <File Path="A:\_E1_SoftwareComponents\trunk\Appl\Source\CtApMySwc.c"/>
+          <File Path="A:\_E1_SoftwareComponents\trunk\Appl\Source\CtSaDoor.c"/>
+          <File Path="A:\_E1_SoftwareComponents\trunk\Appl\Source\CtSaInteriorLight.c"/>
+          <File Path="A:\_E1_SoftwareComponents\trunk\Appl\Source\Main.c"/>
+          <File Path="A:\_E1_SoftwareComponents\trunk\Appl\Source\VttSysVars.c"/>
+      </CompileElements>
+      <AdditionalIncludeDirectory Path="A:\_E1_SoftwareComponents\trunk\Appl\Source" />
+      <AdditionalIncludeDirectory Path="A:\_E1_SoftwareComponents\trunk\Appl\Include" />
+      <AdditionalIncludeDirectory Path="A:\_E1_SoftwareComponents\BSW\Vtt_Common" />
+      <PreprocessorDefinition Symbol="RTE_VFB_TRACE"/>
+      <Timing Parameter="TICKDURATION" Value="1000" />
+      <Timing Parameter="PREISR" Value="1" />
+      <Timing Parameter="POSTISR" Value="1" />
+      <Timing Parameter="PRETASK" Value="1" />
+      <Timing Parameter="TASKSWITCH" Value="1" />
+   </Project>
+</VttVsProject>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" 
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LocalDebuggerCommandArguments>-vttkernel -vttconfigfile "C:\CanCollege\Autosar4\E1_SoftwareComponents\SUT\MyECU.rtcfg"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommand>C:\Program Files\Vector vVIRTUALtarget 1.0\Exec32\VttKernel.exe</LocalDebuggerCommand>
+  </PropertyGroup>
+</Project>
